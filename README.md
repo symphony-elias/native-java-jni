@@ -12,8 +12,9 @@ g++ -dynamiclib -o libnative.dylib Java_org_example_App_sayHello.o -lc
 ```
 
 # How to run after regular bytecode compilation
-Add JVM option:
--Djava.library.path=./testJni/src/main/resources
+Add JVM option: `-Djava.library.path=./testJni/src/main/resources`
+
+Add program argument: `"using JNI"`
 
 # How to run using a native image
 Install GraalVM and native-image:
